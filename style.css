@@ -7,12 +7,22 @@
     src: url(fonts/JalnanOTF.otf);
 }
 
+@keyframes header-coloring-animation {
+    
+}
+
 .header-font {
     font-family: Avenir Next Bold;
+    font-size: 60px;
 }
 
 .subheading-font {
     font-family: Jalnan OTF;
+}
+
+.body-font {
+    font-family: Avenir Next Light;
+    font-size: 15px;
 }
 
 .center-alignment {
@@ -22,7 +32,7 @@
 .clear-buttons {
     background-color: white;
     border: none;
-    border-bottom: double black; 
+    border-bottom: double darkcyan; 
     border-radius: 3px;
     cursor: pointer;
 }
@@ -47,11 +57,11 @@
 }
 
 a:link {
-    color: darkslategray;
+    color:darkslateblue;
     text-decoration: none;
 }
 a:visited {
-    color: darkslategray;
+    color: darkslateblue;
     text-decoration: none;
 }
 a:hover {
