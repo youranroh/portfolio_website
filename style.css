@@ -1,0 +1,9 @@
+.center-alignment {
+    text-align: center;
+}
+
+.clear-buttons {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
