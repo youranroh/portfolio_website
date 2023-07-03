@@ -3,6 +3,10 @@
     src: url(fonts/AvenirNext.ttc);
 }
 @font-face {
+    font-family: "Cafe24Ohsqareair";
+    src: url(fonts/Cafe24Ohsquareair.ttf);
+}
+@font-face {
     font-family: "Jalnan OTF";
     src: url(fonts/JalnanOTF.otf);
 }
@@ -21,8 +25,8 @@
 }
 
 .body-font {
-    font-family: Avenir Next Light;
-    font-size: 15px;
+    font-family: Cafe24Ohsqareair;
+    font-size: 13px;
 }
 
 .center-alignment {
