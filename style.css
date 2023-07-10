@@ -27,6 +27,7 @@
 .body-font {
     font-family: Cafe24Ohsqareair;
     font-size: 13px;
+    line-height: 1.6;
 }
 
 .sub-body-font {
@@ -91,6 +92,10 @@ a:active {
 
 .big-empty-border {
     height: 80px;
+}
+
+.height-border {
+    height: 40px;
 }
 
 .small-empty-border {
