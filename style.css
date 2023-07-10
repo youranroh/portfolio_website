@@ -29,6 +29,11 @@
     font-size: 13px;
 }
 
+.sub-body-font {
+    font-family: Cafe24Ohsqareair;
+    font-size: 10px;
+}
+
 .center-alignment {
     text-align: center;
 }
@@ -86,6 +91,10 @@ a:active {
 
 .big-empty-border {
     height: 80px;
+}
+
+.small-empty-border {
+    width: 180px;
 }
 
 .flex-content img {
