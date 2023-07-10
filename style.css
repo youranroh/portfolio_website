@@ -24,7 +24,7 @@
     font-family: Jalnan OTF;
 }
 
-.body-font {
+p {
     font-family: Cafe24Ohsqareair;
     font-size: 13px;
     line-height: 1.6;
@@ -35,8 +35,18 @@
     font-size: 10px;
 }
 
+.gradient {
+    background: -webkit-linear-gradient(darkslateblue, darkcyan, lightcyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .center-alignment {
     text-align: center;
+}
+
+.right-alignment-with-borders {
+    width: 340px;
 }
 
 .clear-buttons {
@@ -113,4 +123,16 @@ a:active {
 .flex-content {
     display: flex;
     justify-content: center;
+}
+
+.flex-content-right {
+    display: flex;
+}
+
+.flex-content-right img {
+    display: block;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    vertical-align: text-top;
 }
