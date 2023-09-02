@@ -11,10 +11,6 @@
     src: url(fonts/JalnanOTF.otf);
 }
 
-@keyframes header-coloring-animation {
-    
-}
-
 .header-font {
     font-family: Avenir Next Bold;
     font-size: 60px;
@@ -38,6 +34,7 @@ p {
 .gradient {
     background: -webkit-linear-gradient(darkslateblue, darkcyan, lightcyan);
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -46,8 +43,15 @@ p {
 }
 
 .right-alignment-with-borders {
-    width: 340px;
+    width: 49%;
+    float: left;
 }
+
+.float-alignment-with-borders {
+    width: 49%;
+    float: right;
+}
+
 
 .clear-buttons {
     background-color: white;
@@ -77,15 +81,15 @@ p {
 }
 
 a:link {
-    color:darkslateblue;
+    color:darkcyan;
     text-decoration: none;
 }
 a:visited {
-    color: darkslateblue;
+    color: darkcyan;
     text-decoration: none;
 }
 a:hover {
-    color:black;
+    color:darkslateblue;
     text-decoration: none;
 }
 a:active {
@@ -96,16 +100,17 @@ a:active {
 
 .body-margins-to-center {
     margin: 0 auto;
-    padding: 50px;
-    width: 650px;   
-}
-
-.big-empty-border {
-    height: 80px;
+    width: 750px;
+    padding: 35px 0;
+    align-items: center;
 }
 
 .height-border {
     height: 40px;
+}
+
+.big-empty-border {
+    height: 80px;
 }
 
 .small-empty-border {
@@ -117,7 +122,6 @@ a:active {
     margin: 10px;
     width: 30px;
     height: 30px;
-    vertical-align: text-bottom;
 }
 
 .flex-content {
@@ -134,5 +138,49 @@ a:active {
     margin: 10px;
     width: 30px;
     height: 30px;
-    vertical-align: text-top;
+}
+
+.gallery {
+    width: 350px;
+    margin-left: auto; 
+    margin-right: 0;
+    padding-left:35px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.thumbnails-ovf {
+    position: relative;
+}
+
+.thumb-parent {
+    position:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.thumbnail-gallery {
+    width: 32%;
+    height: auto;
+    border-radius: 15%;
+    overflow: hidden;
+    margin: auto 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+article {
+    display:none;
 }

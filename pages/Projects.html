@@ -1,42 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
+    <!--head-->
     <head>
         <link rel="stylesheet" href="../style.css">
 
         <title>Youran's Website</title>
     </head>
 
+    <!--Body-->
     <body>
-    <h1 class="header-font center-alignment gradient">Youran Roh</h1>
+        <h1 class="header-font center-alignment gradient">Youran Roh</h1>
     
     <!-- buttons for my pages -->
-    <div class="center-alignment">
-        <button class="clear-buttons"><a href="../index.html">Profile</a></button>
-        <button class="selected-buttons"><a href="Projects.html" class="current-link">Projects</a></button>
-        <button class="clear-buttons"><a href="Skills.html">Skills</a></button>
-        <button class="clear-buttons"><a href="ContactMe.html">Contact Me</a></button>
-    </div>
+        <div class="center-alignment">
+            <button class="clear-buttons"><a href="../index.html">Profile</a></button>
+            <button class="selected-buttons"><a href="Projects.html" class="current-link">Projects</a></button>
+            <button class="clear-buttons"><a href="Skills.html">Skills</a></button>
+            <button class="clear-buttons"><a href="ContactMe.html">Contact Me</a></button>
+        </div>
 
-    <!-- Add a big blank space border to separate the headings and the buttons to 
-    the body paragraph-->
-    <div class="big-empty-border"></div>
+        <!-- Add a big blank space border to separate the headings and the buttons to 
+        the body paragraph-->
+        <div class="height-border"></div>
 
-    <div class="body-margins-to-center">
-        <a href="https://github.com/youranroh/UnitConverter" target="_blank">
-            <div class="flex-content-right"> 
-                <h4 class="subheading-font">Unit Converter</h4>
-                <img src="../images/link.png" alt="link">
+        <h4 style="text-align:center; font-family:Jalnan OTF;">My projects and programs can be found in my <a href="https://github.com/youranroh?tab=repositories" target="_blank">github</a>.</h4>
+        <p style="text-align:center;">click to enlarge photos and videos.</p>
+        <!--Unit Converter-->
+        <div class="body-margins-to-center"> 
+
+            <div class="inline-block">
+                <!--text field-->
+                <div style="display:inline;"> 
+                    <a href="https://github.com/youranroh/UnitConverter" target="_blank">
+                        <div class="flex-content-right"> 
+                            <h4 class="subheading-font">Unit Converter</h4>
+                            <img src="../images/link.png" alt="link">
+                        </div>
+                    </a>
+                    <!--gap-->
+                    <div class="small-empty-border"><hr/></div> 
+                    
+                    <div>
+                        <!--textfield-->
+                        <div class="right-alignment-with-borders">
+                            <p>This is a personal project I have made to practice JAVA's GUI and JFrames. </p>
+                            <p>First, the User must select the unit they want to convert.</p>
+                            <p>Then they must select the unit they want to convert <i>from</i> and the unit they want to convert <i>to</i>.</p>
+                            <p>Press "convert" then the converter will do its magic and convert the numbers!</p>
+                            <p style="color:darkcyan;"><i>#JAVA&emsp;#JFrame&emsp;#Math</i></p>
+                        </div>
+
+                        <!--thumbnails-->
+                        <div class="float-alignment-with-borders">
+
+                            <div class="thumbnails-ovf">
+                                <div class="thumb-gallery">
+                                    <div class="thumb-parent">
+                                        <div class="thumbnail-gallery">
+                                            <img src="../projectGallery/unitConverter/1.png" alt="thumbnail image for image 1" class="thumbnail-img">
+                                        </div>
+                                        <div class="thumbnail-gallery">
+                                            <img src="../projectGallery/unitConverter/2.png" alt="thumbnail image for image 2" class="thumbnail-img">
+                                        </div>
+                                        <div class="thumbnail-gallery">
+                                            <img src="../projectGallery/unitConverter/3.png" alt="thumbnail image for image 3" class="thumbnail-img">
+                                        </div>
+                                        <div class="thumbnail-gallery">
+                                            <img src="../projectGallery/unitConverter/4.png" alt="thumbnail image for image 4" class="thumbnail-img">
+                                        </div>
+                                        <div class="thumbnail-gallery">
+                                            <img src="../projectGallery/unitConverter/5.png" alt="thumbnail image for image 5" class="thumbnail-img">
+                                        </div>
+                                        <div class="thumbnail-gallery">
+                                            <img src="../projectGallery/unitConverter/6.png" alt="thumbnail image for image 6" class="thumbnail-img">
+                                        </div>
+                                        <div class="thumbnail-gallery">
+                                            <img src="../projectGallery/unitConverter/6.png" alt="thumbnail image for image 6" class="thumbnail-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
             </div>
-        </a>
-        <div class="small-empty-border"><hr/></div>
-        <p class="right-alignment-with-borders">
-            This is a personal project I have made to practice JAVA's GUI and JFrames. </p>
-        <p class="right-alignment-with-borders">
-            First the User must select the unit they want to convert.</p>
-            
-            <p class="right-alignment-with-borders">
-            Then they must select the unit they want to convert <i>from</i> and the unit they want to convert <i>to</i>.
-        </p>
-    </div>
+        </div>
+
+        
+
+        <!--Hang Man-->
+        <div class="body-margins-to-center">
+            <a href="https://github.com/youranroh/Hang-Man" target="_blank">
+                <div class="flex-content-right"> 
+                    <h4 class="subheading-font">Hang Man</h4>
+                    <img src="../images/link.png" alt="link">
+                </div>
+            </a>
+            <div class="small-empty-border"><hr/></div>
+
+            <div class="right-alignment-with-borders">
+                <p>Hang Man is a game I have made using Python and a random word generator library.</p>
+                <p>The user must have the python library Random-Word (pip install Random-Word) in order to enjoy the game.</p>
+                <p>This game is playable using the terminal. The game draws the hangman using ASCII characters and prints out the number of characters there are for the given word.</p>
+                <p>If the character has been already used, the system prints out as so, and if the character is not in the word, the system
+                    takes up a life and prints out parts of the hangman each time the player gets incorrect characters.</p>
+                <p style="color:darkcyan;"><i>#Python&emsp;#Library&emsp;#Terminal</i></p>
+            </div>
+        </div>
     </body>
 </html>
