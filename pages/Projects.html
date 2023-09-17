@@ -52,60 +52,94 @@
 
                         <!--thumbnails-->
                         <div class="float-alignment-with-borders">
-
-                            <div class="thumbnails-ovf">
-                                <div class="thumb-gallery">
-                                    <div class="thumb-parent">
-                                        <div class="thumbnail-gallery">
-                                            <img src="../projectGallery/unitConverter/1.png" alt="thumbnail image for image 1" class="thumbnail-img">
-                                        </div>
-                                        <div class="thumbnail-gallery">
-                                            <img src="../projectGallery/unitConverter/2.png" alt="thumbnail image for image 2" class="thumbnail-img">
-                                        </div>
-                                        <div class="thumbnail-gallery">
-                                            <img src="../projectGallery/unitConverter/3.png" alt="thumbnail image for image 3" class="thumbnail-img">
-                                        </div>
-                                        <div class="thumbnail-gallery">
-                                            <img src="../projectGallery/unitConverter/4.png" alt="thumbnail image for image 4" class="thumbnail-img">
-                                        </div>
-                                        <div class="thumbnail-gallery">
-                                            <img src="../projectGallery/unitConverter/5.png" alt="thumbnail image for image 5" class="thumbnail-img">
-                                        </div>
-                                        <div class="thumbnail-gallery">
-                                            <img src="../projectGallery/unitConverter/6.png" alt="thumbnail image for image 6" class="thumbnail-img">
-                                        </div>
-                                        <div class="thumbnail-gallery">
-                                            <img src="../projectGallery/unitConverter/6.png" alt="thumbnail image for image 6" class="thumbnail-img">
-                                        </div>
-                                    </div>
+                            <div class="thumb-parent">
+                                <div class="thumbnail-gallery">
+                                    <img src="../projectGallery/unitConverter/1.png" alt="thumbnail image for image 1">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <img src="../projectGallery/unitConverter/2.png" alt="thumbnail image for image 2">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <img src="../projectGallery/unitConverter/3.png" alt="thumbnail image for image 3">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <img src="../projectGallery/unitConverter/4.png" alt="thumbnail image for image 4">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <img src="../projectGallery/unitConverter/5.png" alt="thumbnail image for image 5">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <img src="../projectGallery/unitConverter/6.png" alt="thumbnail image for image 6">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <img src="../projectGallery/unitConverter/6.png" alt="thumbnail image for image 6">
+                                </div>
+                                <div class="thumbnail-gallery">
+                                    <video src="../projectGallery/unitConverter/UnitConverterDemonstration.mp4" controls alt="video/mp4"></video>
                                 </div>
                             </div>
-                        </div>    
+                        </div>  
                     </div>
                 </div>
             </div>
-        </div>
 
-        
-
-        <!--Hang Man-->
-        <div class="body-margins-to-center">
-            <a href="https://github.com/youranroh/Hang-Man" target="_blank">
-                <div class="flex-content-right"> 
-                    <h4 class="subheading-font">Hang Man</h4>
-                    <img src="../images/link.png" alt="link">
-                </div>
-            </a>
-            <div class="small-empty-border"><hr/></div>
-
-            <div class="right-alignment-with-borders">
-                <p>Hang Man is a game I have made using Python and a random word generator library.</p>
-                <p>The user must have the python library Random-Word (pip install Random-Word) in order to enjoy the game.</p>
-                <p>This game is playable using the terminal. The game draws the hangman using ASCII characters and prints out the number of characters there are for the given word.</p>
-                <p>If the character has been already used, the system prints out as so, and if the character is not in the word, the system
-                    takes up a life and prints out parts of the hangman each time the player gets incorrect characters.</p>
-                <p style="color:darkcyan;"><i>#Python&emsp;#Library&emsp;#Terminal</i></p>
+            <!-- images! -->
+            <div class="image-closeup">
+                <span>&times;</span>
+                <img src="../projectGallery/unitConverter/1.png" alt="">
+            </div>
+            <div class="video-closeup">
+                <span>&times;</span>
+                <video src="../projectGallery/unitConverter/UnitConverterDemonstration.mp4" controls autoplay alt=""></video>
             </div>
         </div>
+
+
+        <script>
+            document.querySelectorAll('.thumb-parent img').forEach(image=>{
+                image.onclick = () =>{
+                    document.querySelector('.image-closeup').style.display='block';
+                    document.querySelector('.image-closeup img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelectorAll('.thumb-parent video').forEach(vid =>{
+                vid.onclick = () =>{
+                    document.querySelector('.video-closeup').style.display='block';
+                    document.querySelector('.video-closeup video').src = vid.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.image-closeup span').onclick = () => {
+                document.querySelector('.image-closeup').style.display='none';
+            }
+
+            document.querySelector('.video-closeup span').onclick = () => {
+                document.querySelector('.video-closeup').style.display='none';
+            }
+
+
+        </script>
     </body>
 </html>
+
+<!--
+            <div class="body-margins-to-center">
+                <a href="https://github.com/youranroh/Hang-Man" target="_blank">
+                    <div class="flex-content-right"> 
+                        <h4 class="subheading-font">Hang Man</h4>
+                        <img src="../images/link.png" alt="link">
+                    </div>
+                </a>
+                <div class="small-empty-border"><hr/></div>
+    
+                <div class="right-alignment-with-borders">
+                    <p>Hang Man is a game I have made using Python and a random word generator library.</p>
+                    <p>The user must have the python library Random-Word (pip install Random-Word) in order to enjoy the game.</p>
+                    <p>This game is playable using the terminal. The game draws the hangman using ASCII characters and prints out the number of characters there are for the given word.</p>
+                    <p>If the character has been already used, the system prints out as so, and if the character is not in the word, the system
+                        takes up a life and prints out parts of the hangman each time the player gets incorrect characters.</p>
+                    <p style="color:darkcyan;"><i>#Python&emsp;#Library&emsp;#Terminal</i></p>
+                </div>
+            </div>
+-->
