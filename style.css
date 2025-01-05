@@ -234,3 +234,7 @@ img {
     cursor:pointer;
     z-index: 1200;
 }
+
+.experience-company {
+    color: darkcyan
+}
