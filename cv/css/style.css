@@ -1,0 +1,244 @@
+/* remove default page margins for the entire body element */
+body {
+    margin: 0;
+}
+
+/* nav sections */
+
+nav {
+    background-color: black;
+    padding: 20px;
+
+    /* make nav a flex parent and justify the content to the right */
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: "Press Start 2P";
+    font-size: 10px;
+}
+
+nav a:hover{
+    color:white;
+    text-shadow:3px 0px 6px #FE2E64,-5px 0px 10px #F5BCA9
+}
+
+
+/* footer sections */
+footer {
+    background-color: #ffe8f3;
+    padding: 20px;
+
+    /* make footer a flex parent and justify the content to the right */
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: rgb(255, 112, 179);
+    font-family: "swagger";
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 112, 179);
+    font-family: "swagger";
+    font-size: 20px;
+}
+
+footer a:hover {
+    color: white;
+    text-shadow:3px 0px 6px #ff9bb5,-5px 0px 10px #ffecfe
+}
+
+
+/* page sections */
+
+/* section 1 */
+/* Change the background color of >=1 section */
+.name {
+    background-color: #ffe8f3;
+    text-align: center;
+}
+
+/* Add appropriate padding on >=1 div/section */
+.margin-control {
+    margin: 0;
+    padding:20px;
+}
+
+.middle-align {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-alignment {
+    text-align: center;
+}
+
+/* Set the color for the anchor text of links */
+/* Remove the underline for the anchor text of links */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Style the hover state of links to be different color/style in the hover state. */
+a:hover {
+    color:rgb(255, 112, 179);
+}
+
+
+/* link fonts */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.press-start {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lalezar-regular {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Lalezar";
+    font-size: 42px;
+}
+h2 {
+    font-family: "Lalezar";
+}
+  
+p {
+    font-family: "Roboto";
+}
+
+/* Style the border and/or border-radius property of >=1 image */
+.self-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 30px;
+}
+
+/* Add >=2 images to top div/section */
+/* Use absolute positioning to  place the images in the top section */
+.lnkdn-absolute-positioning {
+    position: absolute;
+    width:50px;
+    top: 250px;
+    right:0px;
+}
+.gthb-absolute-positioning {
+    position: absolute;
+    width:50px;
+    top: 330px;
+    right:0px;
+}
+
+/* Style >=2 border properties of the horizontal rules */
+hr.one {
+    border: solid rgb(255, 112, 179);
+    width: 100px;
+}
+hr.blank {
+    border: transparent;
+    height:50px;
+}
+
+.gradient-background {
+    background-image: linear-gradient(white, #ffe8f3);
+}
+
+/* style images within the card to position and appear 
+appropriately within the card */
+.card-image {
+    justify-content: center;
+    width:100%;
+    height:100px;
+    object-fit: cover;
+}
+
+/* create a class card */
+.card {
+    background-color: white;
+    border-style: solid ;
+    border-color: rgb(255, 112, 179);
+    padding:20px;
+    margin:10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px #ffafd6;
+}
+
+/* create a class three-col with display grid that 
+creates a 3 column layout for its three child 'cards'.  
+ie. make the 3 card divs a 3 column layout  with some space 
+between each child */
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+
+/* style the list of languages appropriately using flex or grid */
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+/* style the list of years appropriately using flex or grid */
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: start;
+}
+dt {
+    padding:10px;
+}
+dd {
+    padding:10px;
+}
+
+/* create a class one-col that creates a 
+1 column container for the form */
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* style the input elements (input, textarea…) appropriately */
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: "Lalezar";
+  }
+  
+form input, form textarea {
+    margin-bottom: 10px; 
+    padding: 10px 20px;
+    border: 1px solid rgb(255, 112, 179);
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(255, 112, 179);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
